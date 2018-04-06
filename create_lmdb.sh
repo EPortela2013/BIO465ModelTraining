@@ -5,7 +5,7 @@ set -e
 DATA=.
 
 # Set this path to the appropriate caffe install get_folder_name
-TOOLS=/opt/caffe/bin
+TOOLS=/opt/caffe/distribute/bin
 
 # The path to the images to be used for the creation of the lmdb's
 TRAIN_DATA_ROOT=$DATA/images/
