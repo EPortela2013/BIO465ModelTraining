@@ -31,7 +31,7 @@ layer {
     mean_file: "/home/osboxes/data/lmdb/color-80-20/mean.binaryproto"
   }
   data_param {
-    source: "/home/osboxes/data/lmdb/color-80-20/test_db"
+    source: "/home/osboxes/data/lmdb/color-80-20/val_db"
     batch_size: 24
     backend: LMDB
   }
