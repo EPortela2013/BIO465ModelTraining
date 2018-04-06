@@ -1,0 +1,5 @@
+caffe.log
+images.txt
+images_labeled.txt
+train.txt
+validate.txt
