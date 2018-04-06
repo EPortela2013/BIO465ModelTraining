@@ -12,8 +12,10 @@ TRAIN_DATA_ROOT=$DATA/images/
 VAL_DATA_ROOT=$DATA/images/
 
 # The path where the lmdb's should be placed
-TRAIN_LMDB_DIR=~/data/lmdb/color-80-20/train_db
-VAL_LMDB_DIR=~/data/lmdb/color-80-20/val_db
+TRAIN_LMDB_ROOT=~/data/lmdb/color-80-20
+TRAIN_LMDB_DIR=$TRAIN_LMDB_ROOT/train_db
+VAL_LMDB_ROOT=~/data/lmdb/color-80-20
+VAL_LMDB_DIR=$VAL_LMDB_ROOT/val_db
 
 # Set these to the path where you want to store the lmdb's
 
@@ -43,6 +45,10 @@ if [ ! -d "$VAL_DATA_ROOT" ]; then
 fi
 
 echo "Creating train lmdb..."
+
+# Create parent directories
+mkdir -p $TRAIN_LMDB_ROOT
+mkdir -p $VAL_LMDB_ROOT
 
 GLOG_logtostderr=1 $TOOLS/convert_imageset \
     --resize_height=$RESIZE_HEIGHT \
