@@ -2,7 +2,7 @@
 # Compute the mean image from the training lmdb
 
 # Set to the appropriate caffe installation folder
-TOOLS=/opt/caffe/bin
+TOOLS=/opt/caffe/distribute/bin
 
 # The path where the training lmdd are located
 TRAIN_LMDB_DIR=~/data/lmdb/train_db
