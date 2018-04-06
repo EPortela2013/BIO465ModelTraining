@@ -9,10 +9,10 @@ layer {
   transform_param {
     mirror: true
     crop_size: 224
-    mean_file: "~/data/lmdb/color-80-20/mean.binaryproto"
+    mean_file: "/home/osboxes/data/lmdb/color-80-20/mean.binaryproto"
   }
   data_param {
-    source: "~/data/lmdb/color-80-20/train_db"
+    source: "/home/osboxes/data/lmdb/color-80-20/train_db"
     batch_size: 24
     backend: LMDB
   }
@@ -28,10 +28,10 @@ layer {
   transform_param {
     mirror: false
     crop_size: 224
-    mean_file: "~/data/lmdb/color-80-20/mean.binaryproto"
+    mean_file: "/home/osboxes/data/lmdb/color-80-20/mean.binaryproto"
   }
   data_param {
-    source: "~/data/lmdb/color-80-20/test_db"
+    source: "/home/osboxes/data/lmdb/color-80-20/test_db"
     batch_size: 24
     backend: LMDB
   }
