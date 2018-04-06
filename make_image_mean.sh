@@ -5,7 +5,7 @@
 TOOLS=/opt/caffe/distribute/bin
 
 # The path where the training lmdd are located
-TRAIN_LMDB_DIR=~/data/lmdb/train_db
+TRAIN_LMDB_DIR=~/data/lmdb/color-80-20/train_db
 
 # The location and name where the mean image should be stored
 MEAN_IMAGE_NAME=~/data/lmdb/color-80-20/mean.binaryproto
